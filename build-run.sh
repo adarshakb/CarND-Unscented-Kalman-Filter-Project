@@ -1,5 +1,6 @@
 rm -rf ./build
+mkdir build
 cd build
 cmake ..
 make
-./ExtendedKF
+./UnscentedKF ../data/obj_pose-laser-radar-synthetic-input.txt ../data/output.txt
